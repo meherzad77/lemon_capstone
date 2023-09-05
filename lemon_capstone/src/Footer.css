@@ -1,0 +1,44 @@
+.footer {
+    display : flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: left;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    height:125px;
+}
+.footer nav {
+    list-style: none;
+    display: block;
+}
+
+.footer nav li {
+    display:block;
+}
+.footer .nav_footer a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.socials  {
+    list-style: none;
+    display: block;
+}
+
+.footer socials li {
+    display:block;
+}
+.footer .socials a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+
+}
+

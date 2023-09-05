@@ -1,0 +1,17 @@
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list li {
+    padding: 0 1rem;
+    color: #61dafb;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #61dafb;
+}
