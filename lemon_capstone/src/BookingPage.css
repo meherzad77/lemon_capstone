@@ -1,0 +1,19 @@
+.booking_page {
+    background-color: #FBDABB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.booking_button {
+    background-color: #F4CE14;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
