@@ -6,6 +6,7 @@ import Testimonials from './Testimonials';
 import Story from './Story';
 import { useState } from 'react';
 import {useReducer} from 'react';
+import {fetchAPI, submitAPI} from './api.js';
 
 
 const Main = () => {
@@ -16,12 +17,14 @@ const Main = () => {
         console.log('state is ', state);
         console.log('action is ', action);
 
-        return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+        /* construct a Date object from the date string */
+        const date = new Date(action.payload);
+        return fetchAPI(date);
     }
 
     function initializeTimes() {
         /*create initial state for availableTimes*/
-        return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+        return fetchAPI(new Date());
     }
 
 

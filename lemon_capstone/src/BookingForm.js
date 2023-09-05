@@ -9,7 +9,7 @@ const BookingForm = (props) => {
     
 
 
-    const [date, setDate] = useState('');
+    const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState('');
     const [occasion, setOccasion] = useState('');
@@ -22,7 +22,7 @@ const BookingForm = (props) => {
     return (
         <section>
             <form className="booking_form" onSubmit={handleSubmit}>
-                <label for="res-date">Choose date</label>
+                <label htmlFor="res-date">Choose date</label>
                 <input type="date" id="res-date" 
                     value={date} onChange={(e) => 
                         {
@@ -33,19 +33,19 @@ const BookingForm = (props) => {
                     
                     }                    
                 />
-                <label for="res-time">Choose time</label>
-                <select id="res-time"
+                <label htmlFor="res-time">Choose time</label>
+                <select id="res-time" data-testid="res-time" 
                     value={time} onChange={(e) => setTime(e.target.value)} 
                 >
                     {availableTimes.map((time) => (
                         <option key={time}>{time}</option>
                     ))}
                 </select>
-                <label for="guests">Number of guests</label>
+                <label htmlFor="guests">Number of guests</label>
                 <input type="number" placeholder="1" min="1" max="10" id="guests"
                     value={guests} onChange={(e) => setGuests(e.target.value)}                
                 />
-                <label for="occasion">Occasion</label>
+                <label htmlFor="occasion">Occasion</label>
                 <select id="occasion"
                     value={occasion} onChange={(e) => setOccasion(e.target.value)}
                 >
