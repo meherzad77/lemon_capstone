@@ -19,14 +19,13 @@ const Footer = () => {
             <p className="footer_text">
                 <strong>Contact:</strong>
                 <br />
-                <em>Phone</em>
-                <br/>
                 (415) 123-4567
-                <br />
-                <em>Address:</em>
                 <br />
                 123, Lemon Street, Lemon City, LM 12345
                 <br />
+                abc@def.com
+                <br />
+
             </p>
 
             <section>

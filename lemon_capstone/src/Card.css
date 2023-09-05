@@ -1,0 +1,33 @@
+.specials_card {
+    background-color: #edefee;
+    border-radius: 10px;
+    width: 600px;    
+}
+
+.specials_card_image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.specials_card_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.specials_card_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.specials_card_price {
+    color: #EE9972;
+    font-weight: bold;
+}

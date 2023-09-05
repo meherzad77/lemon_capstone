@@ -15,6 +15,9 @@ function App() {
     </header>
     
     <Main />
+    <br/>
+    <br/>
+    <br/>
     <Footer />
     
     

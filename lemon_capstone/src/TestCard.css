@@ -1,0 +1,44 @@
+.test_card {
+    background-color: #edefee;
+    border-radius: 10px;
+    width: 600px;    
+}
+
+
+.test_card_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.test_card_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin-bottom: 0px;
+}
+
+.test_card_avatar {
+    width: 75px;
+    height: 75px;
+    font-size:3rem;
+    background-color: #495E57;
+    color: #F4CE14;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.test_card_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: left;
+}

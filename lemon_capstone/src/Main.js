@@ -1,7 +1,15 @@
+import Hero from './Hero';
+import Specials from './Specials';
+import Testimonials from './Testimonials';
+import Story from './Story';
+
 const Main = () => {
     return (
         <main>
-            <h1>Main page</h1>
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <Story />            
         </main>
     )
 }

@@ -1,0 +1,32 @@
+
+.specials_title {
+    font-size: 2rem;
+}
+
+
+.specials_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+.specials_button {
+    background-color: #F4CE14;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.specials_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

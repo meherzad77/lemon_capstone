@@ -1,0 +1,23 @@
+
+.testimonials_title {
+    font-size: 2rem;
+}
+
+
+.testimonials_top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+
+.testimonials_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
