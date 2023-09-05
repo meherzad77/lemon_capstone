@@ -10,7 +10,7 @@ const Card = ({ title, description, image_src, price }) => {
             </article>
             <article className="specials_card_bottom">
                 <p>{description}</p>
-                <p><b>Order a delivery</b></p>
+                <p><b>Order a delivery </b></p>
             </article>
         </article>
     );
