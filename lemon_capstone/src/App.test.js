@@ -18,8 +18,13 @@ test('renders booking form', () => {
   const linkElement = screen.getByText("Reserve a Table");
   expect(linkElement).toBeInTheDocument(); 
   fireEvent.click(linkElement);
+  /*set the date to 2023-09-05 */
+  const dateElement = screen.getByTestId("res-date");
+  fireEvent.change(dateElement, {target: {value: '2023-09-05'}});
+
+
   const selectElement = screen.getByTestId("res-time");
-  const expected_times= ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+  const expected_times= ['17:00', '17:30', '18:00','19:30', '20:30', '21:00', '21:30'];
   /*concatenate the expected times into a string*/
   const expected_times_string = expected_times.join('');
   expect(selectElement).toHaveTextContent(expected_times_string);

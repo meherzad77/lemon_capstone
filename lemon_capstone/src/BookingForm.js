@@ -4,7 +4,7 @@ import {useReducer} from 'react';
 
 const BookingForm = (props) => {
     console.log(props);
-    const {availableTimesReducer, dispatch} = props;
+    const {availableTimesReducer, dispatch, submitAPI} = props;
     const availableTimes = (typeof availableTimesReducer==='function') ? availableTimesReducer() : availableTimesReducer;
     
 
@@ -16,14 +16,19 @@ const BookingForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(date, time, guests, occasion);
+        if (time === '' || guests === '' || occasion === '') {
+            alert('Please fill out all fields');
+            return;
+        }
+        console.log('Handle submit : ', date, time, guests, occasion);
+        submitAPI({date, time, guests, occasion});
     }
 
     return (
         <section>
             <form className="booking_form" onSubmit={handleSubmit}>
                 <label htmlFor="res-date">Choose date</label>
-                <input type="date" id="res-date" 
+                <input type="date" id="res-date" data-testid="res-date"
                     value={date} onChange={(e) => 
                         {
                             setDate(e.target.value)
